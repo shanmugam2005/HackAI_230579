@@ -11,7 +11,7 @@ uAgents is a library developed by Fetch.ai that allows for creating autonomous A
         To run the demo, you need API keys from:
                 OpenWeatherAPI
                 
-        #OpenWeatherAPI
+        OpenWeatherAPI
               Visit OpenAI.
               Sign up or log in.
               Navigate to the API section to obtain your API key.
@@ -19,6 +19,14 @@ uAgents is a library developed by Fetch.ai that allows for creating autonomous A
 # Step 3: Run the main script
           To run the project and its agents:
                          poetry run python main.py
+          You need to look for the following output in the logs:
+                         Adding top destinations agent to Bureau: {top_dest_address}
+
+# Step 4: Set up the client script
+          
+
+
+
 
 
 
