@@ -24,6 +24,38 @@ uAgents is a library developed by Fetch.ai that allows for creating autonomous A
 
 # Step 4: Set up the client script
           
+    from uagents import Agent, Context, Bureau,Model
+    from uagents.setup import fund_agent_if_low
+    from src.GetWeatherData import TemperatureAssign,Original_Temperature,getstored,Tem
+    from src.TemperatureCheck import Temperature_check,Temperature_response,Check_proto
+    from src.Location import Location_Check,Location_response,Temp_proto
+
+    GetWeatherData This to get collection of data from a OpenWeatherAPI.
+                     TemperatureAssign     ===>  This Model to Assign Location,Minimum Temperature ,Maximum Temperature User defined value.
+                     Original_Temperature  ===>  This Model to get a Temperature from defined Location.
+                     getstored             ===>  This Function to stored user defined value.
+                     Tem                   ===>  This Function to return a actual Temperature of a Location.
+    TemperatureCheck This to Check wheather Temperature is Normal or Not.
+    Location This to Checl Already Location is present or not.
+
+    This Code Send Alerting Message to particular period time.User also defined a value period of interval.
+
+# Step 5: Run the client script
+
+    Open a New Terminal on your system just type a below command to run an Temperature_Alert_Agent
+
+
+                        python main.py 
+                             or
+               poetry run python top_dest_client.py
+
+
+     Once you hit enter, a request will be sent to the Temperature_agent, and you will be able to see your results in the console!
+
+
+
+                     
+                
 
 
 
